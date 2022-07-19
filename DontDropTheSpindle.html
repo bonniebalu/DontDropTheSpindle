@@ -1,0 +1,38 @@
+<!-- Javascript Hang Man style game with a sheepish spinning theme developed by Bonnie Balu 2022 -->
+<html>
+    <header>
+        <title>Don't Drop the Spindle!</title>
+        <link rel="stylesheet" href=".\style.css">
+        <script type="text/javascript" src=".\DontDropTheSpindle.js"></script>
+    </header>
+    <body>
+        <div>
+            <h1 style="font-size:3em;">Don't drop the spindle!</h1>
+            <div style="height:400px;">
+                <div class="float-left" style="width:40%;">
+                    <div id="img-sheep" class="container sheep-image sheep1" style="height:400px;width:341px;">
+                        <img id="img-spindle" class="spindle" style="width:50px;" src="./Spindle.jpg">
+                    </div>
+                </div>
+                <div class="container float-left" style="width:60%;height:100%;">
+                    <div class="vertical-center">
+                        <div id="letters" class="content letters"></div>
+                        <div id="alphabet" class="content"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="output-message" style="margin-bottom:15px;font-size: 30px;"></div>
+                <button id="btn-play-again" style="display:none;font-size: 15px;" onclick="startGame()">Play again?</button>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        preloadImage('Sheep2.jpg');
+        preloadImage('Sheep3.jpg');
+        preloadImage('Sheep4.jpg');
+        preloadImage('Sheep5.jpg');
+
+        startGame();
+    </script>
+</html>
