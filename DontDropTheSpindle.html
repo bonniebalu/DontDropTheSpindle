@@ -2,8 +2,8 @@
 <html>
     <header>
         <title>Don't Drop the Spindle!</title>
-        <link rel="stylesheet" href=".\style.css">
-        <script type="text/javascript" src=".\DontDropTheSpindle.js"></script>
+        <link rel="stylesheet" href="./content/styles/style.css">
+        <script type="text/javascript" src="./src/DontDropTheSpindle.js"></script>
     </header>
     <body>
         <div>
@@ -11,7 +11,7 @@
             <div style="height:400px;">
                 <div class="float-left" style="width:40%;">
                     <div id="img-sheep" class="container sheep-image sheep1" style="height:400px;width:341px;">
-                        <img id="img-spindle" class="spindle" style="width:50px;" src="./Spindle.jpg">
+                        <img id="img-spindle" class="spindle" style="width:50px;" src="./content/images/Spindle.jpg">
                     </div>
                 </div>
                 <div class="container float-left" style="width:60%;height:100%;">
@@ -28,10 +28,10 @@
         </div>
     </body>
     <script type="text/javascript">
-        preloadImage('Sheep2.jpg');
-        preloadImage('Sheep3.jpg');
-        preloadImage('Sheep4.jpg');
-        preloadImage('Sheep5.jpg');
+        preloadImage('./content/images/Sheep2.jpg');
+        preloadImage('./content/images/Sheep3.jpg');
+        preloadImage('./content/images/Sheep4.jpg');
+        preloadImage('./content/images/Sheep5.jpg');
 
         startGame();
     </script>
